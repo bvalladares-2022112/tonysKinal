@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.brenervalladares.controller.ProgramadorController">
+   <children>
+      <AnchorPane layoutX="-9.0" layoutY="-1.0" prefHeight="506.0" prefWidth="496.0" style="-fx-background-color: #f7a21f;">
+         <children>
+            <Label layoutX="175.0" layoutY="211.0" text="2022112" textFill="#1b1b1b">
+               <font>
+                  <Font name="Bell MT" size="27.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="465.0" prefHeight="508.0" prefWidth="355.0" style="-fx-background-color: #37231a;">
+               <children>
+                  <ImageView fitHeight="377.0" fitWidth="269.0" layoutX="43.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Yo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="46.0" fitWidth="41.0" layoutX="300.0" layoutY="14.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/regresarv.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children></AnchorPane>
+            <Label layoutX="42.0" layoutY="138.0" prefHeight="90.0" prefWidth="435.0" text="Brener Roberto  Valladares Chián " textFill="#111010">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="254.0" prefHeight="34.0" prefWidth="367.0" text="bvalladares-2022112@kinal.edu.gt" textFill="#141414">
+               <font>
+                  <Font name="Bell MT" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-36.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="284.0" layoutX="96.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/iconos.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="175.0" layoutY="304.0" prefHeight="17.0" prefWidth="116.0" text="IN5AM">
+               <font>
+                  <Font name="Bell MT" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

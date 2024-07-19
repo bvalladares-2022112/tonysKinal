@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="906.0" style="-fx-background-color: #e0bb75;" stylesheets="@../resource/TonysKinal.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.brenervalladares.controller.EmpresaController">
+   <children>
+      <AnchorPane layoutY="-4.0" prefHeight="476.0" prefWidth="246.0" style="-fx-background-color: #f8e039;">
+         <children>
+            <Pane layoutX="23.0" prefHeight="161.0" prefWidth="200.0" style="-fx-background-color: #8c5e2d; -fx-background-radius: 20 20 50 50;">
+               <children>
+                  <Label prefHeight="62.0" prefWidth="235.0" text="Producto/Platos" textFill="#fcf9f9">
+                     <font>
+                        <Font name="Agency FB" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-14.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="131.0" fitWidth="190.0" layoutX="35.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/productohasplatos.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <VBox layoutY="208.0" prefHeight="269.0" prefWidth="246.0">
+               <children>
+                  <Button fx:id="btnNuevo" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#nuevo" prefHeight="38.0" prefWidth="246.0" styleClass="button1" text="Nuevo" textFill="#0d0d0d">
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="45.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/agregar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bauhaus 93" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEliminar" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#eliminar" prefHeight="38.0" prefWidth="246.0" styleClass="button1" text="Eliminar" textFill="#0d0d0d">
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="45.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Bauhaus 93" size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="49.0" fitWidth="55.0" layoutX="845.0" layoutY="7.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/regresarv.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <GridPane layoutX="276.0" layoutY="70.0" prefHeight="49.0" prefWidth="579.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="169.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="144.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="111.0" minWidth="10.0" prefWidth="105.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="159.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="20.0" prefWidth="171.0" text="Producto Codigo Producto" textFill="#37231a">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="14.0" prefWidth="97.0" text="Codigo Producto" textFill="#37231a" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="116.0" text="Codigo Plato" textFill="#37231a" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Bernard MT Condensed" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtProductoCodigoProducto" editable="false" prefHeight="25.0" prefWidth="174.0" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <ComboBox fx:id="cmbCodigoProducto" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cmbCodigoPlato" prefWidth="150.0" GridPane.columnIndex="3" />
+         </children>
+      </GridPane>
+      <TableView fx:id="tblEmpresas" layoutX="261.0" layoutY="177.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="283.0" prefWidth="632.0">
+        <columns>
+          <TableColumn fx:id="colProductoCodigoProducto" prefWidth="189.0" text="Producto Codigo Producto" />
+          <TableColumn fx:id="colCodigoPlato" prefWidth="225.0" text="Codigo Plato" />
+            <TableColumn fx:id="colCodigoProducto" prefWidth="216.0" text="Codigo Producto" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
